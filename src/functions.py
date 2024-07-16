@@ -567,10 +567,10 @@ tokenizer = AutoTokenizer.from_pretrained('microsoft/BiomedNLP-PubMedBERT-base-u
 model = BertForSTS()
 model.to(device)
 model.eval()
-PATH = '/content/drive/My Drive/Finetunned_Bert_2.pt'
-model = BertForSTS()
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-model.load_state_dict(torch.load(PATH, map_location=device))
-model.eval()
+#PATH = '/content/drive/My Drive/Finetunned_Bert_2.pt'
+#model = BertForSTS()
+#device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+#model.load_state_dict(torch.load(PATH, map_location=device))
+#model.eval()
 def Find(a,b,c):
   grad_id(a, b,c)
