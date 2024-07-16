@@ -105,7 +105,7 @@ def get_def(a):
 
 nltk.download('stopwords')
 nltk.download('punkt')
-Gard = pd.read_csv('/content/Gard_V1.csv')
+Gard = pd.read_csv('Gard_V1.csv')
 Gard['Synonyms'] = Gard['Synonyms'].apply(lambda x: extract_words_from_json_string(x))
 Gard['Synonyms'] =Gard['GardName'].apply(lambda x: [x])+Gard['Synonyms']
 
@@ -159,7 +159,7 @@ Gard['GardId'] = Gard['GardId'].str.strip('"')
 Gard = Gard[~Gard['GardId'].isin(Excluding_list)]
 
 
-help=pd.read_csv('/content/J_GARD_master.csv')
+help=pd.read_csv('J_GARD_master.csv')
 source_dict = {}
 for index, row in help.iterrows():
     source_name = row['SourceName']
