@@ -1,4 +1,3 @@
-#!pip install transformers sentence-transformers
 import pandas as pd
 import ast
 from itertools import permutations
