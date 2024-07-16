@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='function',
+    name='src',
     version='0.1',
     packages=['src']
     #find_packages(where='OrFi'),  # Automatically find packages in 'src'
